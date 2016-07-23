@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+# use encrypter to encrypt "LWIC{ZYDSBT_MX_WZXEO_BT_OFM}"
+arr = [
+    "LXKF{EEKAKD_YK_LPOWH_WP_MEM}",  # 5, 18, 31
+    "MYLG{FFLBLE_ZL_MQPXI_XQ_NFN}",
+    "NZMH{GGMCMF_AM_NRQYJ_YR_OGO}",  # 4, 17, 30
+    "OANI{HHNDNG_BN_OSRZK_ZS_PHP}",
+    "PBOJ{IIOEOH_CO_PTSAL_AT_QIQ}",  # 3, 16, 29
+    "QCPK{JJPFPI_DP_QUTBM_BU_RJR}",
+    "RDQL{KKQGQJ_EQ_RVUCN_CV_SKS}",  # 2, 15, 28
+    "SERM{LLRHRK_FR_SWVDO_DW_TLT}",
+    "TFSN{MMSISL_GS_TXWEP_EX_UMU}",  # 1, 14, 27
+    "UGTO{NNTJTM_HT_UYXFQ_FY_VNV}",
+    "VHUP{OOUKUN_IU_VZYGR_GZ_WOW}",  # 13, 26
+    "WIVQ{PPVLVO_JV_WAZHS_HA_XPX}",
+    "XJWR{QQWMWP_KW_XBAIT_IB_YQY}",  # 12, 25
+    "YKXS{RRXNXQ_LX_YCBJU_JC_ZRZ}",
+    "ZLYT{SSYOYR_MY_ZDCKV_KD_ASA}",  # 11, 24
+    "AMZU{TTZPZS_NZ_AEDLW_LE_BTB}",
+    "BNAV{UUAQAT_OA_BFEMX_MF_CUC}",  # 10, 23
+    "COBW{VVBRBU_PB_CGFNY_NG_DVD}",
+    "DPCX{WWCSCV_QC_DHGOZ_OH_EWE}",  # 9, 22
+    "EQDY{XXDTDW_RD_EIHPA_PI_FXF}",
+    "FREZ{YYEUEX_SE_FJIQB_QJ_GYG}",  # 8, 21
+    "GSFA{ZZFVFY_TF_GKJRC_RK_HZH}",
+    "HTGB{AAGWGZ_UG_HLKSD_SL_IAI}",  # 7, 20
+    "IUHC{BBHXHA_VH_IMLTE_TM_JBJ}",
+    "JVID{CCIYIB_WI_JNMUF_UN_KCK}",  # 6, 19, 32
+    "KWJE{DDJZJC_XJ_KONVG_VO_LDL}"
+]
+
+i = 8  # initial position
+for c in range(0, 28):
+    print(arr[i][c], end="")
+    i -= 2  # shift -2
+
+    # back if i < 0
+    i += 26
+    i %= 26
